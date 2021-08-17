@@ -1,0 +1,54 @@
+/* Saca espaciado entre grid que por default trae el navbar de boostrap */
+ol, ul {
+    padding-left: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* Section two */
+    section {
+        h2 {
+            @extend %titulos;
+        }
+    }
+    /* Fin section two */
+
+    /* Section three */
+    section {
+        h3 {
+            @extend %titulos;
+        }
+    }
+    /* Fin section three */
+
+    /* Section four */
+    section {
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: 1000;
+            font-size: 20px;
+            background-color: nth($color, 2 );
+            border-radius: 8px;
+            padding: 10px 20px 10px 20px;
+            margin: 0px 10px;
+        }
+    }
+    section {
+        ul {
+        .datos {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                font-weight: 1000;
+                background-color: nth($color, 2);
+                border-radius: 8px;
+                padding: 5px 20px 50px 0px;
+                list-style-type: none;
+                margin: 10px 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    /* Fin section four */    
+}

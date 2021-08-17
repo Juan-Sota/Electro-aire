@@ -1,0 +1,9 @@
+section {
+    .Titulos {
+        @extend %titulos;
+    }
+    .maps-Domicilio {
+        text-align: center;
+        padding: 10px;
+    }
+}

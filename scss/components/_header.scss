@@ -1,0 +1,59 @@
+body {
+    background-color: nth($color, 1);
+    /* Header */
+    header{
+        position: sticky;
+        top: 0;
+        background-color: nth($color, 1 );
+        padding: 10px 0px;
+        box-sizing: border-box;
+        z-index: 9999999999;
+        /* Section one */
+        .Logo {
+            background-color: nth($color, 1);
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px 0px;
+            border: 3px solid nth($color, 2);
+            border-radius: 8px;
+            align-items: center;
+            margin: 10px;
+            box-sizing: border-box;
+            a { 
+                img {
+                    height: 30px;
+                    width: 60px;
+                    padding: 0px 10px;
+                    background-color: nth($color, 1);
+                    display: flex;
+                    justify-content: center;
+                    box-sizing: border-box;
+                }
+            }
+            h1 {
+                color: darken(white, 15%);
+                font-size: 40px;
+                font-family: 'Tourney', cursive;
+                font-weight: 640;
+                font-style: italic;
+                background-color: nth ($color, 1);
+                letter-spacing: 4px;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px 0px;
+                margin: 0px 350px 0px 0px;
+                box-sizing: border-box;
+            }
+        }
+        /* Navigation */
+        nav {
+            .Link-fondo {
+                background-color: nth($color, 1);
+                padding: 10px;
+                text-decoration: none;
+                color: nth($color, 3);
+                background-color: nth($color, 1);      
+            }
+        }
+    }
+}     

@@ -1,0 +1,10 @@
+body {
+    //Parametros para modificar el estilo de los enlaces internos
+    .comun {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: 1000;
+        background-color: nth($color, 2);
+        margin: 0px 10px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,48 @@
+section {
+    h4 {
+        @extend %titulos;
+    }
+    .img-Técnicos {
+        display: flex;
+        justify-content:space-between;
+        margin: 30px 120px;
+        .card {
+            position: relative;
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .card::after {
+            @extend %card
+        }
+        .photo {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    .juan {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 24px;
+        margin: 50px 150px;
+        li {
+            font-family: 'Domine', serif;
+            color: darken(white, 15%);
+        }
+    }
+    .BD {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 30px 20px;
+        li{
+            font-family: 'Zen Loop', cursive;
+            color: darken(white, 15%);
+        }
+    }
+}

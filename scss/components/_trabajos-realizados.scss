@@ -1,0 +1,35 @@
+.foto-de-Fondo {
+    background-image: url(https://lh3.googleusercontent.com/ilUQjNR5h-6tKCHr3KCL7hs10L3DDhhziBsP1ycUZ5aXALWY7DN2R6dDAEnd9eKcLT6guBY=s151);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3 {
+        @extend %titulos;
+    }
+    p {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: 1000;
+        text-align: left;
+        padding: 5px 20px 5px 20px;
+        background-color: nth($color, 2);
+        border-radius: 8px;
+        margin: 0px 10px 10px 10px;
+    }
+    .img {
+        z-index: -999999999;
+        a {
+            text-decoration: none;
+            img {
+                &:hover {
+                    transition: 0.7s;
+                    transform: scale(1.1);
+                    opacity: 0.9;
+                }
+            border-radius: 8px;
+            height: 200px;
+            width: 400px;
+            margin: 10px 20px;
+            box-shadow: 0px 0px 5px 3px #ADA996;
+            }
+        }
+    }
+}

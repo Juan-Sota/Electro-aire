@@ -1,0 +1,222 @@
+@charset "UTF-8";
+footer h5, section .Titulos, section h4, .foto-de-Fondo h3, .grid section h3, .grid section h2 {
+  text-align: left;
+  font-family: "Domine", serif;
+  background-color: #001428EB;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px 10px 10px;
+  margin: 10px 10px;
+  font-size: 25px;
+}
+
+section .img-Técnicos .card::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: #ADA996;
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  width: 150px;
+  height: 150px;
+  filter: blur(15px);
+  z-index: -2;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #001428EB;
+  /* Header */
+}
+body header {
+  position: sticky;
+  top: 0;
+  background-color: #001428EB;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  z-index: 9999999999;
+  /* Section one */
+  /* Navigation */
+}
+body header .Logo {
+  background-color: #001428EB;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  border: 3px solid #86878a;
+  border-radius: 8px;
+  align-items: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+body header .Logo a img {
+  height: 30px;
+  width: 60px;
+  padding: 0px 10px;
+  background-color: #001428EB;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+body header .Logo h1 {
+  color: #d9d9d9;
+  font-size: 40px;
+  font-family: "Tourney", cursive;
+  font-weight: 640;
+  font-style: italic;
+  background-color: nth #001428EB, #86878a, #ffffff, 1;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  margin: 0px 350px 0px 0px;
+  box-sizing: border-box;
+}
+body header nav .Link-fondo {
+  background-color: #001428EB;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #001428EB;
+}
+
+/* Saca espaciado entre grid que por default trae el navbar de boostrap */
+ol, ul {
+  padding-left: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  /* Section two */
+  /* Fin section two */
+  /* Section three */
+  /* Fin section three */
+  /* Section four */
+  /* Fin section four */
+}
+.grid section p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
+  background-color: #86878a;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  margin: 0px 10px;
+}
+.grid section ul .datos {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 1000;
+  background-color: #86878a;
+  border-radius: 8px;
+  padding: 5px 20px 50px 0px;
+  list-style-type: none;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto-de-Fondo {
+  background-image: url(https://lh3.googleusercontent.com/ilUQjNR5h-6tKCHr3KCL7hs10L3DDhhziBsP1ycUZ5aXALWY7DN2R6dDAEnd9eKcLT6guBY=s151);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foto-de-Fondo p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 1000;
+  text-align: left;
+  padding: 5px 20px 5px 20px;
+  background-color: #86878a;
+  border-radius: 8px;
+  margin: 0px 10px 10px 10px;
+}
+.foto-de-Fondo .img {
+  z-index: -999999999;
+}
+.foto-de-Fondo .img a {
+  text-decoration: none;
+}
+.foto-de-Fondo .img a img {
+  border-radius: 8px;
+  height: 200px;
+  width: 400px;
+  margin: 10px 20px;
+  box-shadow: 0px 0px 5px 3px #ADA996;
+}
+.foto-de-Fondo .img a img:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+section .img-Técnicos {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 120px;
+}
+section .img-Técnicos .card {
+  position: relative;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -1;
+}
+section .img-Técnicos .photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: -1;
+}
+section .juan {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 24px;
+  margin: 50px 150px;
+}
+section .juan li {
+  font-family: "Domine", serif;
+  color: #d9d9d9;
+}
+section .BD {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 30px 20px;
+}
+section .BD li {
+  font-family: "Zen Loop", cursive;
+  color: #d9d9d9;
+}
+
+section .maps-Domicilio {
+  text-align: center;
+  padding: 10px;
+}
+
+footer nav .footer {
+  padding: 20px 80px 20px 80px;
+  display: flex;
+  justify-content: center;
+}
+footer nav .footer .footer a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+
+body .comun {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 1000;
+  background-color: #86878a;
+  margin: 0px 10px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
