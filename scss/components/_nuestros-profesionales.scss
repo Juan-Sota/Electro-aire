@@ -1,48 +1,50 @@
 section {
-    h4 {
-        @extend %titulos;
-    }
-    .img-Técnicos {
-        display: flex;
-        justify-content:space-between;
-        margin: 30px 120px;
-        .card {
-            position: relative;
-            background-color: white;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            z-index: -1;
-        }
-        .card::after {
-            @extend %card
-        }
-        .photo {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            z-index: -1;
+    div {
+        h4 {
+            @extend %titulos;
         }
     }
-    .juan {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        font-size: 24px;
-        margin: 50px 150px;
-        li {
-            font-family: 'Domine', serif;
-            color: darken(white, 15%);
-        }
-    }
-    .BD {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        margin: 30px 20px;
-        li{
-            font-family: 'Zen Loop', cursive;
-            color: darken(white, 15%);
+    div {
+        .display-wrap {
+            .display-photo {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .photo {
+                    margin-top: 20px;
+                    height: auto;
+                    width: 200px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 5px 3px #ADA996;
+                    box-sizing: border-box;
+                }
+            }
+            .juan {
+                margin: 20px 0px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                font-size: 24px;
+                box-sizing: border-box;
+                li {
+                    font-family: 'Domine', serif;
+                    color: darken(white, 15%);
+                }
+            }
+            .BD {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                margin-bottom: 20px;
+                font-size: 18px;
+                box-sizing: border-box;
+                li{
+                    font-family: 'Zen Loop', cursive;
+                    color: darken(white, 15%);
+                }
+            }
         }
     }
 }

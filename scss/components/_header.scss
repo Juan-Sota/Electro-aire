@@ -1,59 +1,65 @@
 body {
-    background-color: nth($color, 1);
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     /* Header */
-    header{
+    header {
         position: sticky;
         top: 0;
         background-color: nth($color, 1 );
-        padding: 10px 0px;
+        padding: 10px;
         box-sizing: border-box;
         z-index: 9999999999;
         /* Section one */
-        .Logo {
+        section {
+            border: 3px solid nth($color, 2) !important;
+            border-radius: 8px;
             background-color: nth($color, 1);
             display: flex;
             justify-content: flex-start;
-            padding: 10px 0px;
-            border: 3px solid nth($color, 2);
-            border-radius: 8px;
             align-items: center;
-            margin: 10px;
+            margin: 5px;
             box-sizing: border-box;
-            a { 
-                img {
-                    height: 30px;
-                    width: 60px;
-                    padding: 0px 10px;
-                    background-color: nth($color, 1);
+                .Logo {
                     display: flex;
                     justify-content: center;
+                    align-items: center;
+                    a {
+                        img {
+                            height: auto;
+                            width: 70px;
+                            padding: 0px 10px;
+                            background-color: nth($color, 1);
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            div {
+                h1 {
+                    color: darken(white, 15%);
+                    font-size: 50px;
+                    font-family: 'Tourney', cursive;
+                    font-weight: 640;
+                    font-style: italic;
+                    background-color: nth($color, 1);
+                    letter-spacing: 4px;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 0px 250px 0px 0px;
                     box-sizing: border-box;
                 }
             }
-            h1 {
-                color: darken(white, 15%);
-                font-size: 40px;
-                font-family: 'Tourney', cursive;
-                font-weight: 640;
-                font-style: italic;
-                background-color: nth ($color, 1);
-                letter-spacing: 4px;
-                display: flex;
-                justify-content: flex-start;
-                padding: 10px 0px;
-                margin: 0px 350px 0px 0px;
-                box-sizing: border-box;
-            }
-        }
-        /* Navigation */
-        nav {
-            .Link-fondo {
-                background-color: nth($color, 1);
-                padding: 10px;
-                text-decoration: none;
-                color: nth($color, 3);
-                background-color: nth($color, 1);      
+            /* Navigation */
+            div {
+                nav {
+                    .Link-fondo {
+                        padding: 10px;
+                        text-decoration: none;
+                        color: nth($color, 3);
+                    }
+                }
             }
         }
     }
-}     
+}

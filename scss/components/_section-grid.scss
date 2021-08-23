@@ -19,20 +19,33 @@ ol, ul {
     section {
         h3 {
             @extend %titulos;
+            padding: 10px;
         }
     }
     /* Fin section three */
 
     /* Section four */
     section {
-        p {
+        .primer-Parrafo {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 1000;
-            font-size: 20px;
+            font-size: 30px;
+            letter-spacing: 3px;
             background-color: nth($color, 2 );
             border-radius: 8px;
             padding: 10px 20px 10px 20px;
             margin: 0px 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .segundo-Parrafo {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: 1000;
+            font-size: 25px;
+            background-color: nth($color, 2 );
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 10px 0px 10px;
         }
     }
     section {

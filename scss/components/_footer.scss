@@ -10,6 +10,14 @@ footer {
             .footer a {
                 text-decoration: none;
                 color: darken(white, 15%);
+                .image-size {
+                    height: auto;
+                    width: 50px;
+                    &:hover {
+                        transition: all 0.7s;
+                        transform: scale(1.3);
+                    }
+                }
             }
         }
     }

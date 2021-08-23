@@ -4,7 +4,19 @@ body {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         font-weight: 1000;
         background-color: nth($color, 2);
-        margin: 0px 10px;
+        margin: 20px 10px;
         border-radius: 8px;
+    }
+    .img-comun {
+        display: flex;
+        justify-content: center;
+        .img {
+            &:hover {
+                transition: 0.7s;
+                transform: scale(1.1);
+            }
+        @include varios-parametros (400px, 200px, 10px 20px, 8px);
+        box-shadow: 0px 0px 5px 3px #ADA996;
+        }   
     }
 }

@@ -1,0 +1,31 @@
+// @media only screen and (min-width: 1440px) {
+//     body header {    
+//         background-color: black;
+//     }
+// }
+
+
+@media only screen and (min-width:1340) and (max-width: 1439){ 
+    body {
+        header {
+            div {
+                h1 {
+                    margin: 0px 100px 0px 0px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1080px) and (max-width: 1339px) {
+        body {
+            color: black;
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width: 1079px) {
+        body {
+            color: black;
+    }
+}
