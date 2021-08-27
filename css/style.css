@@ -1,10 +1,10 @@
-footer h5, section .Titulos, section div h4, section h3, .grid section h3, .grid section h2 {
+body .Titulos, footer h5, section .Titulos, section div h4, section h3, .grid section h3, .grid section h2 {
   text-align: left;
   font-family: "Domine", serif;
   background-color: #001428EB;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
-  border: 3px solid gray;
+  border: 3px solid #afb2bb;
   border-radius: 8px;
   display: flex;
   justify-content: flex-start;
@@ -217,7 +217,9 @@ body .comun {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 1000;
   background-color: #afb2bb;
+  font-size: 24px;
   margin: 20px 10px;
+  padding: 10px 100px;
   border-radius: 8px;
 }
 body .img-comun {

@@ -5,7 +5,7 @@
     background-color:  nth($color, 1);
     color: nth($color, 3);
     padding: 10px 20px 10px 20px;
-    border: 3px solid gray;
+    border: 3px solid nth($color, 2);
     border-radius: 8px;
     display: flex;
     justify-content: flex-start;
