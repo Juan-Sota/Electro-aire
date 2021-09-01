@@ -24,4 +24,14 @@ body {
         box-shadow: 0px 0px 5px 3px #ADA996;
         }   
     }
+    section {
+        .fondo {
+            background-color: white;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding: 5% 0%;
+        }
+    }
 }

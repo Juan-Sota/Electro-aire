@@ -2,14 +2,13 @@
 %titulos {
     text-align: left;
     font-family: 'Domine', serif;
-    background-color:  nth($color, 1);
     color: nth($color, 3);
-    padding: 10px 20px 10px 20px;
-    border: 3px solid nth($color, 2);
     border-radius: 8px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 10px 0px 10px 10px;
     margin: 10px 10px;
-    font-size: 25px;
+    font-size: 35px;
+    box-shadow: 0px 0px 5px 3px #ADA996;
 }
+

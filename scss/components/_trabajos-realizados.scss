@@ -2,16 +2,14 @@ section {
     h3 {
         @extend %titulos;
     }
-    p {
+    .Trab1 {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         font-weight: 1000;
         text-align: left;
         padding: 5px 20px 5px 20px;
-        background-color: nth($color, 2);
+        background-color: nth($color, 3);
         border-radius: 8px;
         margin: 0px 10px 10px 10px;
-    }
-    .Trab1 {
         font-size: 25px;
     }
     section {

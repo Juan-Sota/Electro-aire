@@ -7,8 +7,11 @@ ol, ul {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
+    background-color: darken(#203A43,5%);
+    height: 500px;
     /* Section two */
-    section {
+    .orden-1 {
+        order: 1;
         h2 {
             @extend %titulos;
         }
@@ -16,25 +19,25 @@ ol, ul {
     /* Fin section two */
 
     /* Section three */
-    section {
+    .orden-3 {
+        order: 2;
         h3 {
             @extend %titulos;
-            padding: 10px;
         }
     }
     /* Fin section three */
 
     /* Section four */
-    section {
+    .orden-2 {
+        order: 3;
         .primer-Parrafo {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 1000;
-            font-size: 30px;
-            letter-spacing: 3px;
-            background-color: nth($color, 2 );
+            font-size: 25px;
+            background-color: nth($color, 3);
             border-radius: 8px;
             padding: 10px 20px 10px 20px;
-            margin: 0px 10px;
+            margin: 0px 10px 100px 10px;
             display: flex;
             justify-content: center;
         }
@@ -42,22 +45,23 @@ ol, ul {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 1000;
             font-size: 25px;
-            background-color: nth($color, 2 );
+            background-color: nth($color, 3 );
             border-radius: 8px;
             padding: 20px;
             margin: 15px 10px 0px 10px;
         }
     }
-    section {
+    .orden-4 {
+        order: 4;
         ul {
-        .datos {
+        .datos-1, .datos-2, .datos-3 {
                 font-family: 'Yanone Kaffeesatz', sans-serif;
                 font-weight: 1000;
-                background-color: nth($color, 2);
+                background-color: nth($color, 3);
                 border-radius: 8px;
                 padding: 5px 20px 50px 0px;
                 list-style-type: none;
-                margin: 10px 10px;
+                margin: 0px 10px 50px 10px;
                 display: flex;
                 justify-content: space-around;
             }

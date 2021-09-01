@@ -6,19 +6,16 @@ body {
     header {
         position: sticky;
         top: 0;
-        background-color: nth($color, 1 );
-        padding: 10px;
+        background-color: nth($color, 1);
+        padding: 5px;
         box-sizing: border-box;
-        z-index: 9999999999;
+        z-index: 1;
         /* Section one */
         section {
-            border: 3px solid nth($color, 2) !important;
             border-radius: 8px;
-            background-color: nth($color, 1);
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin: 5px;
             box-sizing: border-box;
                 .Logo {
                     display: flex;
@@ -41,7 +38,6 @@ body {
                     font-family: 'Tourney', cursive;
                     font-weight: 640;
                     font-style: italic;
-                    background-color: nth($color, 1);
                     letter-spacing: 4px;
                     display: flex;
                     justify-content: flex-start;
@@ -55,8 +51,31 @@ body {
                     .Link-fondo {
                         padding: 10px;
                         text-decoration: none;
-                        color: nth($color, 3);
+                        color: darken(white, 15%);
+                        @media only screen and (min-width:1340) and (max-width: 1439){ 
+                            padding: 0px;
+                            transition: all 2s;
+                            transform: scale(2);
+                        }
                     }
+                }
+            }
+        }
+    }
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #23A216;
+        border-radius: 50%;
+        padding: 15px;
+        a{
+            img {
+                height: auto;
+                width: 60px;
+                &:hover {
+                    transition: all 0.7s;
+                    transform: scale(1.1);
                 }
             }
         }

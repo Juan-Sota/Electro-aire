@@ -1,4 +1,6 @@
 footer {
+    height: 400px;
+    background-color: nth($color, 4);
     h5 {
         @extend %titulos;
     }
@@ -19,6 +21,17 @@ footer {
                     }
                 }
             }
+        }
+    }
+    .derechos {
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: 1000;
+            font-size: 18px;
+            border-radius: 8px;
+            color: darken(white, 15%);
+            padding: 10px 20px 10px 20px;
+            margin: 0px 10px 100px 10px;
         }
     }
 }
