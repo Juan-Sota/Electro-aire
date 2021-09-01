@@ -52,11 +52,6 @@ body {
                         padding: 10px;
                         text-decoration: none;
                         color: darken(white, 15%);
-                        @media only screen and (min-width:1340) and (max-width: 1439){ 
-                            padding: 0px;
-                            transition: all 2s;
-                            transform: scale(2);
-                        }
                     }
                 }
             }
