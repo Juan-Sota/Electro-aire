@@ -8,26 +8,19 @@ ol, ul {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     background-color: darken(#203A43,5%);
-    height: 500px;
-    /* Section two */
+    height: 430px;
     .orden-1 {
         order: 1;
         h2 {
             @extend %titulos;
         }
     }
-    /* Fin section two */
-
-    /* Section three */
     .orden-3 {
         order: 2;
         h3 {
             @extend %titulos;
         }
     }
-    /* Fin section three */
-
-    /* Section four */
     .orden-2 {
         order: 3;
         .primer-Parrafo {
@@ -36,8 +29,8 @@ ol, ul {
             font-size: 25px;
             background-color: nth($color, 3);
             border-radius: 8px;
-            padding: 10px 20px 10px 20px;
-            margin: 0px 10px 100px 10px;
+            padding: 10px 20px;
+            margin: 40px 10px 50px 10px;
             display: flex;
             justify-content: center;
         }
@@ -54,18 +47,22 @@ ol, ul {
     .orden-4 {
         order: 4;
         ul {
-        .datos-1, .datos-2, .datos-3 {
+            .datos-1, 
+            .datos-2, 
+            .datos-3 {
                 font-family: 'Yanone Kaffeesatz', sans-serif;
                 font-weight: 1000;
                 background-color: nth($color, 3);
                 border-radius: 8px;
-                padding: 5px 20px 50px 0px;
+                padding: 10px 10px;
                 list-style-type: none;
-                margin: 0px 10px 50px 10px;
-                display: flex;
-                justify-content: space-around;
+                margin: 0px 10px 20px 10px;
+            }
+            .btn {
+                margin-left: 10px;
+                color: black;
+                background-color: nth($color, 3);
             }
         }
     }
-    /* Fin section four */    
 }

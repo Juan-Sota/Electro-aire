@@ -22,7 +22,7 @@
     <meta property="og:description" content="Nuestra empresa se encarga de solucionar todo tipo de problemas
     en su vivienda.">
     <meta property="og:site_name" content="Electro Aire | Servicio técnico especializado">
-    <meta property="og:image" content="images/Open-graph">
+    <meta property="og:image" content="images/Open-graph.png">
     <meta property="og:locale" content="es_ES">
 
     <!-- Favicon -->
@@ -49,75 +49,66 @@
 
 <body class="color-pagina">
         <!-- Las imágenes son de modo de prueba, al igual que los perfiles
-         y las fotos que redirigen a un video de prueba porque no tengo
+        y las fotos que redirigen a un video de prueba porque no tengo
         el contenido real armado. -->
         <!-- Header -->
         <header>
-            <!-- Section one -->
             <section>
                 <div class="Logo">
                     <a href="index.html">
                         <img class= "logo"; src="images/Logo-Electro-Aire.png" alt="Logo">
                     </a>
                 </div> 
-                <div>
+                <div class="div-h1">
                     <h1 class="Titulo">ELECTRO AIRE</h1>
                 </div>
-                <div>
-                    <nav class="navbar navbar-expand-lg Position">
-                        <div class="container-fluid">
-                            <a class="Link-fondo" href="index.html">Inicio</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse Link-fondo" id="navbarText">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="Link-fondo" href="com-Trab.html">Como trabajamos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="Link-fondo" href="qui-Som.html">Quienes somos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="Link-fondo" href="que-Ofr.html">Que ofrecemos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="Link-fondo" href="#Contacto">Contacto</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </section>
-            <!-- Fin section one -->
-            <!-- Navegation -->
-            <!-- Fin navegation -->
     </header>
-    
+    <div class="menu-desplegable-inicio">
+        <input type="checkbox" class="checkbox" id="check">
+        <label class= "menu" for="check">
+            <div>
+                <img class="logo-menu" src="images/menu-4.png" alt="logo-de-menú">
+            </div>
+        </label>
+        <div class="rigth-panel">
+            <ul>
+                <li>
+                    <a class="Link-fondo" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="Link-fondo" href="com-Trab.html">Como trabajamos</a>
+                </li>
+                <li>
+                    <a class="Link-fondo" href="qui-Som.html">Quienes somos</a>
+                </li>
+                <li>
+                    <a class="Link-fondo" href="que-Ofr.html">Que ofrecemos</a>
+                </li>
+                <li>
+                    <a class="Link-fondo" href="#Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <section class="whatsapp">
         <a href="https://wa.me/1112345678">
-            <img src="images/Logo-de-WhatsApp.png" alt="Logo de WhatsApp">
+            <img class="size-wpp" src="images/Logo-de-WhatsApp.png" alt="Logo de WhatsApp">
         </a>
     </section>
         <!-- Fin header -->
 
 <!-- Section Grid -->
-        <!-- Section two -->
 <section class="grid">
     <section class="orden-1">
         <h2 class="Titulos">¿Problemas en tu casa?</h2> 
     </section>
-        <!-- Fin section two -->
 
-    <!-- Section three -->
     <section class="orden-3">
         <h3 class="Titulos">Dejanos tus datos y nos contactamos</h3>
     </section>
-    <!-- Fin section three -->
 
-    <!-- Section four -->
     <section class="orden-2">
         <p class="primer-Parrafo">¡Nosotros podemos ayudarte!</p>
         <p class="segundo-Parrafo"> Contáctate con nosotros y enviaremos uno de nuestros técnicos de confianza para solucionar tu inconveniente.</p>
@@ -125,31 +116,58 @@
     <section class="orden-4">
         <ul>
             <ul class="datos-1">
-                <li>Nombre y apellido</li>
-                <li>Rubro</li>
+                <li> 
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre y apellido</span>
+                        <input type="text" aria-label="First name" class="form-control">
+                        <input type="text" aria-label="Last name" class="form-control">
+                      </div>
+                </li>
+                <li>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Rubro</option>
+                        <option value="1">Electricidad domiciliaria</option>
+                        <option value="2">Aire acondicionado</option>
+                        <option value="3">Televisores y placas programables</option>
+                      </select>
+                </li>
             </ul>
             <ul class="datos-2">
-                <li>Servicio</li>
-                <li>Email</li>
+                <li><form>
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                  </form></li>
             </ul>
             <ul class="datos-3">
-                <li>C. de área</li>
-                <li>Teléfono</li>
+                <li><div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Código de área" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Teléfono" aria-label="Last name">
+                    </div>
+                  </div></li>
             </ul>
+            <div class="enviar">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </ul>
     </section>
 </section>
-    <!-- Fin section four -->
 <!-- Fin section Grid -->
 
-    <!-- Section five -->
+    <!-- Section trabajos -->
     <section>
         <h3 class="Titulos">Trabajos realizados</h3>
         <p class="Trab1">Estos son ejemplos de trabajos realizados por nuestro
             equipo de profesionales. Cada uno de estos trabajos
             se puede observar la prolijidad, calidad y buen precio
             que ofrecemos.</p>
-        <section>
+        <section class="media-Flex">
             <a href="Img1.html">
                 <img class="img" src="images/1.jpg" alt="Imagen 1">
             </a>
@@ -176,9 +194,9 @@
             </a>
         </section>
     </section>
-    <!-- Fin section five -->
+    <!-- Fin section trabajos -->
 
-    <!-- Section six -->
+    <!-- Section profesionales -->
     <section>
         <div>
             <h4 class="Titulos">Nuestros profesionales</h4>
@@ -187,52 +205,79 @@
         <div>
             <div class="display-wrap">
                 <div class="display-photo">
-                    <img class="photo" src="images/9.jpg" alt="Imagen 9">
-                    <img class="photo" src="images/10.jpg" alt="Imágen 10">
-                    <img class="photo" src="images/11.jpg" alt="Imágen 11">
+                    <ul>
+                        <div>
+                            <img class="photo" src="images/9.jpg" alt="Imagen 9">
+                        </div>
+                        <div>
+                            <li class="juan">JUAN SOTA</li>
+                        </div>
+                        <div>
+                            <li class="BD">Juan Sota cuenta con una amplia formación en aires acondicionados y refrigeración</li>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div>
+                            <img class="photo" src="images/10.jpg" alt="Imágen 10">
+                        </div>
+                        <div>
+                            <li class="juan">JUAN SOTA</li>
+                        </div>
+                        <div>
+                            <li class="BD">Juan Sota cuenta con una amplia formación en televisores y placas programables</li>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div>
+                            <img class="photo" src="images/11.jpg" alt="Imágen 11">
+                        </div>
+                        <div>
+                            <li class="juan">JUAN SOTA</li>
+                        </div>
+                        <div>
+                            <li class="BD">Juan Sota cuenta con una amplia formación en electricidad domiciliaria</li>
+                        </div>
+                    </ul>
                 </div>
-                <ul class="juan">
-                    <li class="juan1">JUAN SOTA</li>
-                    <li class="juan2">JUAN SOTA</li>
-                    <li class="juan3">JUAN SOTA</li>
-                </ul>
-                <ul class="BD">
-                    <li class="BD1">Juan Sota cuenta con una amplia formación en aires acondicionados y refrigeración</li>
-                    <li class="BD2">Juan Sota cuenta con una amplia formación en mecanica general y placas programables</li>
-                    <li class="BD3">Juan Sota cuenta con una amplia formación en televisores de todo tipo</li>
-                </ul>
             </div>
         </div>
     </section>
 
-        <section>
-        <p class="Titulos">Ubicación del local</p>
-        <section class="maps-Domicilio">
-            <iframe width="80%" height="500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991625693763!2d2.292292615003983!3d48.8583700792874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sar!4v1625703109323!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </section>
+    <section>
+        <h4 class="Titulos">Ubicación del local</h4>
     </section>
-    <!-- Fin section seven -->
+    
+    <section class="maps-Domicilio">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991625693763!2d2.292292615003983!3d48.8583700792874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sar!4v1625703109323!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <!-- Fin section profesionales -->
     
 
     <!-- Footer -->
     <footer>
         <h5 class="Titulos">Contacto</h5>
-        <nav>
-            <ul class="footer" id="Contacto">
+        <nav class="back">
+            <ul class="pie" id="Contacto">
                 <li class="footer">
-                    <a href="https://www.instagram.com/sotaa_nacho/?hl=es-la">
+                    <a href="https://www.instagram.com/sotacode5/?hl=es-la">
                         <img class="image-size" src="images/Logo-de-instagram.png" alt="Logo-instagram">
                     </a>
                 </li>
                 <li class="footer">
-                    <a href="https://www.facebook.com/nachoelcuervito">
+                    <a href="404-not-found.html">
                         <img class="image-size" src="images/Logo-de-Facebook.png" alt="Logo-facebook">
                     </a>
                 </li>
                 <li class="footer">
-                    <a href="https://twitter.com/Nacho_sotaa">
+                    <a href="404-not-found.html">
                         <img class="image-size" src="images/Logo-de-Twitter.png" alt="Logo-twitter">
+                    </a>
+                </li>
+                <li class="footer">
+                    <a href="https://github.com/Juan-Sota">
+                        <img class="image-size" src="images/032-github.png" alt="Logo-twitter">
                     </a>
                 </li>
                 <li class="footer">
@@ -242,7 +287,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="derechos">
+        <div class="back derechos">
             <p>Electro Aire Corporation © 2021</p>
         </div>
     </footer>

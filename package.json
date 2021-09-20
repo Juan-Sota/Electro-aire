@@ -1,11 +1,11 @@
 {
   "name": "clase-11",
   "version": "1.0.0",
-  "description": "",
+  "description": "Primera pagina web diseñada enfocada en un proyecto futuro para un cliente.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Juan Sota",
   "license": "ISC"
 }

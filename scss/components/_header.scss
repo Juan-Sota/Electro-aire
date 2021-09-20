@@ -1,37 +1,35 @@
 body {
+    .collapse {
+        // hace que aparezcan elementos que por defoult trae boostrap
+        display: block !important;
+    }
     background: #0F2027;
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Header */
     header {
         position: sticky;
         top: 0;
         background-color: nth($color, 1);
-        padding: 5px;
         box-sizing: border-box;
         z-index: 1;
-        /* Section one */
         section {
-            border-radius: 8px;
             display: flex;
-            justify-content: flex-start;
             align-items: center;
-            box-sizing: border-box;
-                .Logo {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    a {
-                        img {
-                            height: auto;
-                            width: 70px;
-                            padding: 0px 10px;
-                            background-color: nth($color, 1);
-                            box-sizing: border-box;
-                        }
+            .Logo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a {
+                    img {
+                        height: auto;
+                        width: 70px;
+                        padding: 0px 10px;
+                        background-color: nth($color, 1);
+                        box-sizing: border-box;
                     }
                 }
-            div {
+            }
+            .div-h1 {
                 h1 {
                     color: darken(white, 15%);
                     font-size: 50px;
@@ -39,16 +37,35 @@ body {
                     font-weight: 640;
                     font-style: italic;
                     letter-spacing: 4px;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin: 0px 250px 0px 0px;
-                    box-sizing: border-box;
+                    margin-right: 300px;
                 }
             }
-            /* Navigation */
-            div {
-                nav {
+        }
+    }
+    .menu-desplegable-inicio {
+        margin: 0px;
+        padding: 0px;
+
+        // Menú desplegable para la media query
+        .checkbox {
+            display: none;
+        }
+        .menu {
+            display: none;
+        }
+        .rigth-panel {
+            position: fixed;
+            top: 3%;
+            right: 5%;
+            z-index: 1;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li {
+                    list-style-type: none;
                     .Link-fondo {
+                        align-items: center;
                         padding: 10px;
                         text-decoration: none;
                         color: darken(white, 15%);

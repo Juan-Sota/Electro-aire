@@ -5,45 +5,45 @@ section {
         }
     }
     div {
-        .display-wrap {
+        .display-wrap { 
             .display-photo {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                .photo {
-                    margin-top: 20px;
-                    height: auto;
-                    width: 200px;
-                    border-radius: 50%;
-                    box-shadow: 0px 0px 5px 3px #ADA996;
-                    box-sizing: border-box;
+                ul {
+                    display: inline-block;
+                    div { 
+                        display: flex;
+                        justify-content: space-around;
+                        .photo {
+                            margin-top: 20px;
+                            height: auto;
+                            width: 200px;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 5px 3px #ADA996;
+                            box-sizing: border-box;
+                        }
+                    }
                 }
             }
             .juan {
                 margin: 20px 0px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
                 list-style-type: none;
                 font-size: 24px;
                 box-sizing: border-box;
-                li {
-                    font-family: 'Domine', serif;
-                    color: darken(white, 15%);
-                }
+                font-family: 'Domine', serif;
+                color: darken(white, 15%);
+                text-align: center;
             }
             .BD {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
                 list-style-type: none;
                 margin-bottom: 20px;
                 font-size: 18px;
                 box-sizing: border-box;
-                li{
-                    font-family: 'Zen Loop', cursive;
-                    color: darken(white, 15%);
-                }
+                font-family: 'Zen Loop', cursive;
+                color: darken(white, 15%);
+                text-align: center;
+
             }
         }
     }

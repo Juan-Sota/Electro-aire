@@ -2,8 +2,12 @@ section {
     .Titulos {
         @extend %titulos;
     }
-    .maps-Domicilio {
-        text-align: center;
-        padding: 10px;
+}
+.maps-Domicilio {
+    text-align: center;
+    padding: 10px;
+    iframe {
+        width: 80%;
+        height: 500px;
     }
 }
